@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Verdana", "sans-serif";
+    background-color: #23272f;
+    color: #f2f3f5;
+    margin-right: 30px;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+#top-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #23272f;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo img {
+    width: min(100px, 10vw);
+    height: auto;
+    margin: 20px;
+}
+
+h1 {
+    font-size: min(5vw, 2.3em);
+    font-weight: 500;
+}
+
+.main-section header,
+#navbar header {
+    font-size: min(2.8vw, 1.6em);
+}
+
+.main-section header {
+    font-weight: 500;
+}
+
+#navbar {
+    float: left;
+    width: min(300px, 40vw);
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    position: fixed;
+    max-height: calc(100vh - 10rem);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#navbar header {
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    background-color: #23272f;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-items {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-items li a {
+    display: block;
+    text-decoration: none;
+    font-size: min(2.1vw, 1.1em);
+    color: #fff;
+    font-weight: 300;
+    padding: 5px 0 5px 20px;
+}
+
+.nav-items li {
+    padding: 8px 0;
+    margin: 0 5px;
+    height: 80%;
+    border-top: 1px solid rgba(128, 128, 128, 0.201);
+}
+
+.nav-items li:hover,
+.nav-items li:focus {
+    background-color: #283541;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.nav-items li a:hover {
+    color: #1887ad;
+}
+
+.active {
+    color: #1887ad;
+}
+
+.main-section {
+    margin-left: min(300px, 40vw);
+    ;
+    padding: 1px 35px;
+    clear: right;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+pre code {
+    display: flex;
+    max-width: 80%;
+    min-width: max(150px, 50vw);
+    object-fit: cover;
+    align-items: center;
+    background-color: #16181d;
+    padding: 10px 30px 10px 0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 3px #313e4bec;
+    font-size: min(1.6vw, 1.1em);
+    line-height: 25px;
+}
+
+.main-section p,
+.main-section li {
+    font-size: min(1.6vw, 1.01em);
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+h2 {
+    font-size: min(2vw, 1.3em);
+    font-weight: 700;
+}
+
+#Reference a {
+    color: #1887ad;
+}
+
+/* Media Queries */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
